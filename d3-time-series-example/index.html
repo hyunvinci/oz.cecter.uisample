@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3 Time Series Example</title>
+  
+  
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      /* GENERAL STYLING */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwOIpWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCv6KVjbNBYlgoC1CzjsGyI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCv6KVjbNBYlgoCjC3jsGyI.ttf) format('truetype');
+}
+.text-primary {
+  color: rgba(0, 0, 0, 0.8);
+}
+.text-secondary {
+  color: rgba(0, 0, 0, 0.65);
+}
+.text-muted {
+  color: rgba(0, 0, 0, 0.45);
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0 0.5em;
+  font-weight: 400;
+  font-size: 14px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8);
+}
+h1,
+h2,
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  margin: 0.2em 0 0.5em 0;
+}
+h1 {
+  font-size: 3em;
+  color: #000;
+}
+h2 {
+  font-size: 2em;
+  color: #222;
+}
+h3 {
+  font-size: 1.5em;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 200, 0.7);
+}
+p {
+  margin: 1.5em 0;
+}
+.chart-wrapper {
+  border: solid 1px #ccc;
+}
+.chart-wrapper .chart {
+  border: solid 1px red;
+}
+.x-axis path,
+.x-axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x-axis text {
+  font: 10px sans-serif;
+}
+.controllers {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.controllers .control label {
+  font-weight: bold;
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>D3 Time Series Example</h1>
+<div id="controllers"></div>
+<div id="chart"></div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

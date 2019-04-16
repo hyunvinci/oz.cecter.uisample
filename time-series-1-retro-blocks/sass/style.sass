@@ -1,0 +1,42 @@
+body
+	width: 100vw
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	background: #333
+
+.clock
+	display: flex
+
+.grid
+	width: 66px
+	display: flex
+	flex-flow: wrap
+	margin: 0 4px
+
+.spacer
+	width: 22px
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+
+.pixel,
+	width: 20px
+	height: 20px
+	margin: 1px
+	box-sizing: border-box
+	transition: background-color .2s ease
+	&.active:not(.second)
+		background-color: #FDFB42
+	&.second:not(.active)
+		background-color: lighten(#333, 15%)
+	&.second.active
+		background-color: #73FFFD
+
+.s-pixel
+	border: 11px solid transparent
+	
+.s-pixel:nth-child(4)
+	border-left-color: #fff
+	border-top-color: #fff
